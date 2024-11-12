@@ -16,6 +16,7 @@ jobs:
       uses: cicirello/generate-sitemap@v1
       with:
         base-url-path: https://bitbadges.org/
+        path-to-root: gh-pages
     - name: Output stats
       run: |
         echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
